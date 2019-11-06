@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/colorWhite"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/item_project_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/ic_project_one" />
+
+        <TextView
+            android:id="@+id/item_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/item_project_pic"
+            android:lines="1"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            tools:text="星时代投资金融" />
+
+        <TextView
+            android:id="@+id/item_project_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_project_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/item_project_pic"
+            android:lines="2"
+            tools:text="简介：由多位老师整体把握项目经验，整体运营规划" />
+
+        <TextView
+            android:id="@+id/item_project_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_project_pic"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/item_project_pic"
+            android:lines="1"
+            tools:text="参与人数：20人" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

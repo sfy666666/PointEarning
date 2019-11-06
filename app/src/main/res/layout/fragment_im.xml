@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8FF">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165px"
+        android:text="消息"
+        android:textSize="55px"
+        android:textStyle="bold" />
+
+    <!--<Button
+        android:id="@+id/btn_friend"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_marginLeft="896px"
+        android:layout_marginTop="165px"
+        android:background="@drawable/addressbook"
+
+        />-->
+    <ImageView
+        android:id="@+id/btn_friend"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="870px"
+        android:layout_marginTop="145px"
+        android:padding="15px"
+        android:scaleType="centerInside"
+        android:src="@drawable/addressbook"
+
+        />
+
+    <ImageView
+        android:id="@+id/btn_add"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="970px"
+        android:layout_marginTop="148px"
+        android:padding="15px"
+        android:scaleType="centerInside"
+        android:src="@drawable/add" />
+    <!--
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="998px"
+            android:layout_marginTop="166px"
+            android:background="@drawable/add"
+            />
+    -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginTop="10px">
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/slide_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/slide_rv"
+        android:layout_marginTop="20px"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"/>-->
+    <!-- <com.example.pointearning.widget.SlideRecyclerView
+         android:layout_marginTop="20px"
+         android:layout_below="@id/title"
+         android:id="@+id/slide_rv"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghostWhile"
+    tools:context=".ui.main.MyWalletActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="682px"
+        android:scaleType="fitXY"
+        android:src="@drawable/dingbanner"
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="130px"
+        android:scaleType="centerInside"
+        android:src="@drawable/fanhui1"
+
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167px"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:text="钱包"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320px"
+        android:textSize="35px"
+        android:textColor="@color/colorWhite"
+        android:text="余额 (元)"/>
+    <TextView
+        android:id="@+id/yue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="383px"
+        android:textSize="69px"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:text="0.00"/>
+    <Button
+        android:id="@+id/btn_chongzhi"
+        android:layout_width="209px"
+        android:layout_height="77px"
+        android:layout_marginLeft="280px"
+        android:layout_marginTop="496px"
+        android:text="充值"
+        android:textColor="@color/white"
+        android:textSize="35px"
+        android:background="@drawable/xuanzhongqianbao"
+        />
+    <Button
+        android:id="@+id/btn_tixian"
+        android:layout_width="209px"
+        android:layout_height="77px"
+        android:layout_marginLeft="580px"
+        android:layout_marginTop="496px"
+        android:text="提现"
+        android:textColor="@color/white"
+        android:textSize="35px"
+        android:background="@drawable/xuanzhongqianbao"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="486px"
+        android:layout_marginTop="747px"
+        android:background="@drawable/white_circle_shape">
+        <TextView
+            android:id="@+id/bank_card"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:drawablePadding="42px"
+            android:text="银行卡"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="37px"
+            android:textColor="#323232"
+            android:drawableRight="@drawable/gengduo"
+            android:drawableLeft="@drawable/xinhangka"
+            android:layout_marginTop="63px"/>
+        <TextView
+            android:id="@+id/zhangdan"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:drawablePadding="42px"
+            android:text="账单"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="37px"
+            android:textColor="#323232"
+            android:drawableRight="@drawable/gengduo"
+            android:drawableLeft="@drawable/xinhangka"
+            android:layout_marginTop="220px"/>
+        <TextView
+            android:id="@+id/erweima"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:drawablePadding="42px"
+            android:text="二维码"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="37px"
+            android:textColor="#323232"
+            android:drawableRight="@drawable/gengduo"
+            android:drawableLeft="@drawable/xinhangka"
+            android:layout_marginTop="384px"/>
+        
+        <View
+            android:background="#F4F4F4"
+            android:layout_width="919px"
+            android:layout_height="1px"
+            android:layout_marginTop="161px"
+            android:layout_centerHorizontal="true"/>
+        <View
+            android:background="#F4F4F4"
+            android:layout_width="919px"
+            android:layout_height="1px"
+            android:layout_marginTop="324px"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

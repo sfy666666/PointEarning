@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:startColor="#FF814E"
+        android:endColor="#FF514B"
+        />
+   angel 180从右向左渐变     270从上向下
+    <corners android:radius="200px" />
+
+</shape>

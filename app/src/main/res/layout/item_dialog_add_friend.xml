@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="332px"
+    android:layout_height="262px"
+    android:background="@drawable/di">
+    <TextView
+        android:id="@+id/tv_add_friend"
+        android:paddingLeft="36px"
+        android:drawablePadding="36px"
+        android:text="添加好友"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="38px"
+        android:textColor="#BFBFBF"
+        android:drawableLeft="@drawable/tianjiahaoyou"
+        android:layout_marginTop="57px"/>
+
+    <View
+        android:layout_width="274px"
+        android:layout_height="1px"
+        android:layout_marginLeft="33px"
+        android:layout_marginTop="139px"
+        android:background="#EBEBEB"/>
+
+    <TextView
+        android:id="@+id/tv_create_group_chat"
+        android:paddingLeft="36px"
+        android:drawablePadding="36px"
+        android:text="创建群聊"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="38px"
+        android:textColor="#BFBFBF"
+        android:drawableLeft="@drawable/chuangjianqunliao"
+        android:layout_marginTop="174px"/>
+
+</RelativeLayout>

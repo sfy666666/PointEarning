@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_marginLeft="50px"
+    android:layout_marginTop="44px"
+    android:layout_width="match_parent"
+    android:layout_height="300px">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="星时代金融投资"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_below="@id/tv_title"
+        android:text="嘻嘻嘻嘻嘻嘻嘻嘻寻寻寻寻寻寻寻"
+        android:maxLines="2"
+        android:layout_width="518px"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_content"/>
+
+    <TextView
+        android:layout_below="@id/tv_content"
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="参与人数:20人"/>
+    
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_marginLeft="649px"
+        android:layout_marginTop="40px"
+        android:scaleType="fitXY"
+        android:src="@drawable/qq"
+        android:layout_width="307px"
+        android:layout_height="198px"/>
+
+
+</RelativeLayout>

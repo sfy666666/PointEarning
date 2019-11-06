@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F8F8F8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="55px"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="60px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门动态"
+        android:textColor="#FF504B"
+        />
+    <TextView
+        android:textSize="44px"
+        android:layout_marginTop="110px"
+        android:layout_marginLeft="380px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最新动态"
+        />
+
+    <Button
+        android:id="@+id/iv_take_picture"
+        android:layout_width="75px"
+        android:layout_height="60px"
+        android:layout_marginLeft="950px"
+        android:layout_marginTop="100px"
+        android:scaleType="centerInside"
+        android:background="@drawable/cameras"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="200px"
+            android:id="@+id/recycler_view_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/recycler_view_horizontal"
+            android:id="@+id/recycler_view_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

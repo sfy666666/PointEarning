@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="212px"
+    android:background="@color/white">
+
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="40px"
+        android:src="@drawable/baobao" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57px"
+        android:layout_marginLeft="38px"
+        android:layout_toRightOf="@id/icon"
+        android:text="宝宝"
+        android:textColor="#333333"
+        android:textSize="40px" />
+    <TextView
+        android:id="@+id/yanzhengxiaoxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123px"
+        android:layout_marginLeft="38px"
+        android:layout_toRightOf="@id/icon"
+        android:text="你好，我是杨洋"
+        android:textColor="#BFBFBF"
+        android:textSize="29px" />
+    <Button
+        android:id="@+id/btn_agree"
+        android:layout_width="192px"
+        android:layout_height="92px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="842px"
+        android:text="同意"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/button_send_shape"
+
+        android:textSize="38px" />
+
+
+    <TextView
+        android:id="@+id/yitongyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="881px"
+        android:text="已同意"
+        android:visibility="gone"
+        android:textColor="#BFBFBF"
+        android:textSize="38px" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="986px"
+        android:layout_height="1px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210px"
+        android:background="#DADADA" />
+
+
+
+
+</RelativeLayout>

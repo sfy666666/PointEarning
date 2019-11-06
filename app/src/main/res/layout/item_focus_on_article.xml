@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:background="@drawable/shape_of_attention_art"
+        android:layout_marginTop="50px"
+        android:paddingBottom="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_attention"
+        android:layout_width="209px"
+        android:layout_height="77px"
+        android:layout_marginLeft="827px"
+        android:layout_marginTop="44px"
+        android:background="@drawable/btn"
+        android:textSize="34px"
+        android:text="取消关注"
+        android:textColor="#BFBFBF" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="115px"
+        android:layout_height="115px"
+        android:layout_marginLeft="53px"
+        android:layout_marginTop="36px"
+        android:src="@drawable/hhh" />
+
+    <ImageView
+        android:id="@+id/big_img"
+        android:paddingLeft="55px"
+        android:paddingRight="55px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:layout_below="@id/content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/iii" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="51px"
+        android:text="Rose"
+        android:textSize="50px"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="55px"
+        android:paddingRight="55px"
+        android:layout_marginTop="199px"
+        android:maxLines="5"
+        android:ellipsize="end"
+        android:text="@string/contene_one" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="112px"
+        android:text="50分钟前" />
+
+
+    </RelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

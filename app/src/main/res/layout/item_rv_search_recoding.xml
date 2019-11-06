@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="227px"
+    android:layout_height="120px">
+    <Button
+        android:focusable="false"
+        android:clickable="false"
+        android:background="@drawable/white_search_shape"
+        android:text="白雅晴"
+        android:textSize="34px"
+        android:id="@+id/btn_search_item"
+        android:layout_width="191px"
+        android:layout_height="84px"/>
+
+
+</RelativeLayout>

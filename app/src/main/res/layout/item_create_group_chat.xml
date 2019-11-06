@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="212px"
+    android:background="@color/white">
+
+
+
+    <CheckBox
+        android:layout_marginLeft="45px"
+        android:id="@+id/checkbox"
+        android:layout_centerVertical="true"
+        android:layout_width="58px"
+        android:layout_height="58px"
+        android:button="@null"
+        android:background="@drawable/checkbox_create_group_chat"/>
+
+    <ImageView
+        android:layout_toRightOf="@id/checkbox"
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="40px"
+        android:src="@drawable/baobao" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="38px"
+        android:layout_toRightOf="@id/icon"
+        android:text="宝宝"
+        android:textColor="#333333"
+        android:textSize="40px" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="986px"
+        android:layout_height="1px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210px"
+        android:background="#DADADA" />
+
+
+
+
+</RelativeLayout>

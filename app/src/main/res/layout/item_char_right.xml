@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170px">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gg"
+        android:layout_marginLeft="947px"
+        android:layout_centerVertical="true"
+
+        />
+    <TextView
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:background="@drawable/duihua"
+        android:gravity="center"
+        android:layout_marginRight="130px"
+        android:text="您看过那个项目了吗?"
+        android:layout_alignRight="@id/icon"/>
+
+
+</RelativeLayout>

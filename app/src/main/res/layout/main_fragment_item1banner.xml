@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="2680px"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/xx" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_shape"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingLeft="15dp"
+                android:src="@drawable/fangda" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="导师/项目"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/search_view"
+            android:adjustViewBounds="true"
+            android:src="@drawable/saoyisao" />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_search"
+        android:layout_marginTop="25dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/grid_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner" />
+
+    <ImageView
+        android:layout_width="92px"
+        android:layout_height="92px"
+        android:layout_marginLeft="61px"
+        android:layout_marginTop="901px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_tzlc" />
+
+
+    <ImageView
+        android:layout_width="92px"
+        android:layout_height="92px"
+        android:layout_marginLeft="280px"
+        android:layout_marginTop="901px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_gpzq" />
+
+
+    <ImageView
+        android:layout_width="92px"
+        android:layout_height="92px"
+        android:layout_marginLeft="503px"
+        android:layout_marginTop="901px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_wz" />
+
+    <ImageView
+        android:layout_width="92px"
+        android:layout_height="92px"
+        android:layout_marginLeft="706px"
+        android:layout_marginTop="901px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_jz" />
+
+    <ImageView
+        android:layout_width="92px"
+        android:layout_height="92px"
+        android:layout_marginLeft="933px"
+        android:layout_marginTop="901px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_jrds" />
+
+    <ImageView
+        android:layout_width="92px"
+        android:layout_height="92px"
+        android:layout_marginLeft="61px"
+        android:layout_marginTop="1121px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_wzds" />
+
+    <ImageView
+        android:layout_width="92px"
+        android:layout_height="92px"
+        android:layout_marginLeft="280px"
+        android:layout_marginTop="1121px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_tzxf" />
+
+    <ImageView
+        android:layout_width="92px"
+        android:layout_height="92px"
+        android:layout_marginLeft="503px"
+        android:layout_marginTop="1121px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_lcxm" />
+
+    <ImageView
+        android:layout_width="92px"
+        android:layout_height="92px"
+        android:layout_marginLeft="706px"
+        android:layout_marginTop="1121px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_zjds" />
+
+    <ImageView
+        android:layout_width="92px"
+        android:layout_height="92px"
+        android:layout_marginLeft="933px"
+        android:layout_marginTop="1121px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_qbds" />
+
+
+    <TextView
+        android:id="@+id/tv_touzilicai"
+        android:layout_width="150px"
+        android:layout_height="44px"
+        android:layout_marginLeft="46px"
+        android:layout_marginTop="1033px"
+        android:text="投资理财"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="150px"
+        android:layout_height="44px"
+        android:layout_marginLeft="261px"
+        android:layout_marginTop="1033px"
+        android:text="股票大神"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="150px"
+        android:layout_height="44px"
+        android:layout_marginLeft="512px"
+        android:layout_marginTop="1033px"
+        android:text="网赚"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="150px"
+        android:layout_height="44px"
+        android:layout_marginLeft="725px"
+        android:layout_marginTop="1033px"
+        android:text="兼职"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="150px"
+        android:layout_height="44px"
+        android:layout_marginLeft="910px"
+        android:layout_marginTop="1033px"
+        android:text="金融大神"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="150px"
+        android:layout_height="44px"
+        android:layout_marginLeft="46px"
+        android:layout_marginTop="1260px"
+        android:text="网赚大神"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="150px"
+        android:layout_height="44px"
+        android:layout_marginLeft="261px"
+        android:layout_marginTop="1260px"
+        android:text="投资先锋"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="150px"
+        android:layout_height="44px"
+        android:layout_marginLeft="488px"
+        android:layout_marginTop="1260px"
+        android:text="投资理财"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="150px"
+        android:layout_height="44px"
+        android:layout_marginLeft="700px"
+        android:layout_marginTop="1260px"
+        android:text="最佳导师"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="150px"
+        android:layout_height="44px"
+        android:layout_marginLeft="910px"
+        android:layout_marginTop="1260px"
+        android:text="全部导师"
+        android:textSize="32px" />
+
+    <RelativeLayout
+        android:layout_width="983px"
+        android:layout_height="89px"
+        android:layout_marginLeft="46px"
+        android:layout_marginTop="1366px"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:layout_width="42px"
+            android:layout_height="35px"
+            android:layout_marginLeft="31px"
+            android:layout_marginTop="28px"
+            android:scaleType="fitXY"
+            android:src="@drawable/laba" />
+
+        <TextView
+            android:layout_width="880px"
+            android:layout_height="44px"
+            android:layout_marginLeft="86px"
+            android:layout_marginTop="24px"
+            android:text="恭喜李某在北京2019年9月4日11:40:13获得10000积分"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_points_for_gifts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1500px"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ll" />
+
+    <ImageView
+        android:layout_width="39px"
+        android:layout_height="37px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="1828px"
+        android:scaleType="fitXY"
+        android:src="@drawable/shu" />
+
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="60px"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="1825px"
+        android:text="优秀项目"
+        android:textSize="46px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="536px"
+        android:layout_height="373px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="1926px"
+        android:scaleType="fitXY"
+        android:src="@drawable/nn" />
+
+    <ImageView
+        android:layout_width="520px"
+        android:layout_height="340px"
+        android:layout_marginLeft="530px"
+        android:layout_marginTop="1926px"
+        android:scaleType="fitXY"
+        android:src="@drawable/jinronglicai" />
+
+    <ImageView
+        android:layout_width="1025px"
+        android:layout_height="350px"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="2292px"
+        android:scaleType="fitXY"
+        android:src="@drawable/zz" />
+
+</RelativeLayout>

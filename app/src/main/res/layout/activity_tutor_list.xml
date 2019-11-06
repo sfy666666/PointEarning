@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghostWhile"
+    tools:context=".ui.TutorListActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="253px"
+        android:background="@color/white"/>
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="140px"
+        android:scaleType="centerInside"
+        android:src="@drawable/fanhui"
+
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167px"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:text="投资理财"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="960px"
+        android:layout_marginTop="145px"
+        android:scaleType="centerInside"
+        android:src="@drawable/sosuo"
+
+        />
+
+    <View
+        android:layout_marginTop="254px"
+        android:layout_width="match_parent"
+        android:layout_height="48px"
+        android:background="@color/ghostWhile"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:background="@color/ghostWhile"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_marginTop="301px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/ghostWhile"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

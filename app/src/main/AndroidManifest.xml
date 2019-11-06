@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pointearning">
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/three"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/three"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.MainActivity"/>
+        <activity android:name=".ui.main.FocusOnArticleActivity" />
+        <activity android:name=".ui.main.FansActivity" />
+        <activity android:name=".ui.main.AttentionActivity" />
+        <activity android:name=".contact.Contact2Activity" />
+        <activity android:name=".ui.main.FeedBackActivity" />
+        <activity android:name=".ui.main.VIPActivity" />
+        <activity android:name=".ui.main.MyWalletActivity" />
+        <activity android:name=".ui.main.PersonalSettingsActivity" />
+        <activity android:name=".ui.main.SettingsActivity" />
+        <activity android:name=".ui.main.ChatDetailActivity" />
+        <activity android:name=".ui.main.ChatActivity"/>
+        <activity android:name=".ui.main.CreateGroupChatActivity" />
+        <activity android:name=".ui.main.NewFriendsActivity" />
+        <activity android:name=".ui.main.ContactActivity" />
+        <activity android:name=".ui.main.ProgramDetailActivity" />
+        <activity android:name=".ui.main.PointsForGiftsActivity" />
+        <activity android:name=".ui.main.ShareIntoMomentsActivity" />
+        <activity android:name=".ui.main.JoinActivity" />
+        <activity android:name=".ui.main.SearchActivity" />
+        <activity android:name=".ui.main.TutorDetailActivity" />
+        <activity android:name=".ui.TutorListActivity" />
+        <activity android:name=".ui.CommentActivity" />
+        <activity android:name=".ui.main.CommunityDetailActivity" />
+        <activity android:name=".ui.ForgotPasswordActivity" />
+        <activity android:name=".ui.BaseActivity" />
+        <activity android:name=".ui.main.SplashActivity" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".zxing.activity.CaptureActivity" />
+        <activity android:name=".ui.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="2340" />
+    </application>
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

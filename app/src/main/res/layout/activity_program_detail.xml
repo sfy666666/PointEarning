@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ghostWhile"
+    tools:context=".ui.main.ProgramDetailActivity">
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="140px"
+        android:scaleType="centerInside"
+        android:src="@drawable/fanhui"
+
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167px"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:text="星时代金融投资"/>
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="960px"
+        android:layout_marginTop="140px"
+        android:scaleType="centerInside"
+        android:src="@drawable/more"
+
+        />
+
+    <ScrollView
+        android:layout_marginTop="42px"
+        android:scrollbars="none"
+        android:layout_below="@id/title"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@color/ghostWhile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gongluebanner"/>
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="363px"
+                android:src="@drawable/beijing"/>
+
+            <RelativeLayout
+                android:id="@+id/tab_information"
+                android:layout_marginTop="425px"
+                android:layout_marginLeft="50px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="50px"
+                    android:paddingRight="50px"
+                    android:paddingTop="50px"
+                    android:id="@+id/tv_tab_program_information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:textStyle="bold"
+                    android:text="项目信息"/>
+                <ImageView
+                    android:id="@+id/iv_tab_program_information"
+                    android:layout_below="@id/tv_tab_program_information"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dianji"
+                    />
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_safe"
+            android:layout_marginTop="425px"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_tab_safe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="50px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:textSize="40px"
+                android:text="安全保障"/>
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_tab_safe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tab_safe"
+                android:src="@drawable/dianji"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/tab_teacher"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="425px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_tab_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="50px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:textSize="40px"
+                android:text="指导明师"/>
+            <ImageView
+                android:id="@+id/iv_tab_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dianji"
+                android:layout_below="@id/tv_tab_teacher"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+
+            <!--去除滑动效果的ViewPager-->
+            <com.example.pointearning.widget.ForScrollViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="983px"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tab_teacher"
+                android:layout_marginTop="93px"
+                android:background="@color/colorWhite"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+    <com.example.pointearning.widget.AutoCardView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="250px">
+        <Button
+            android:id="@+id/btn_contact_tutor"
+            android:layout_width="989px"
+            android:layout_height="115px"
+            android:layout_marginTop="17px"
+            android:layout_marginLeft="46px"
+            android:gravity="center"
+            android:text="联系导师"
+            android:padding="10px"
+            android:textSize="40px"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/lateral_gradient_shape"
+            />
+
+    </com.example.pointearning.widget.AutoCardView>
+
+
+
+
+</RelativeLayout>

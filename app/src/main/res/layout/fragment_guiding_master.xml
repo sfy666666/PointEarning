@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.fragment.GuidingMasterFragment">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baiyaqingtouxiang"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="70px"
+        android:layout_toRightOf="@id/iv_icon"
+        android:textSize="52px"
+        android:textColor="#333333"
+        android:text="白雅晴"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_below="@id/tv_name"
+        android:textSize="40px"
+        android:textColor="#A5A5A5"
+        android:text="暂无说明"/>
+
+    <Button
+        android:padding="5px"
+        android:layout_width="209px"
+        android:layout_height="77px"
+        android:layout_marginLeft="721px"
+        android:layout_marginTop="89px"
+        android:background="@drawable/lateral_gradient_shape"
+        android:text="+关注"
+        android:textSize="43px"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:padding="5px"
+        android:id="@+id/btn_tutor_type"
+        android:layout_width="166px"
+        android:layout_height="55px"
+        android:layout_marginLeft="250px"
+        android:layout_marginTop="41px"
+        android:layout_below="@id/iv_icon"
+        android:text="风险投资"
+        android:textColor="#FF504B"
+        android:background="@drawable/button_pink_shape"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="29px"
+        />
+    <Button
+        android:padding="5px"
+        android:id="@+id/btn_tutor_level"
+        android:layout_width="166px"
+        android:layout_height="55px"
+        android:layout_marginLeft="54px"
+        android:layout_marginTop="41px"
+        android:layout_below="@id/iv_icon"
+        android:text="一级导师"
+        android:textColor="#FF504B"
+        android:background="@drawable/button_pink_shape"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="29px"
+        />
+
+    <TextView
+        android:id="@+id/tv_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53px"
+        android:layout_marginTop="30px"
+        android:layout_below="@id/btn_tutor_level"
+        android:text="CAD证券分析师、股票操盘高手、有着丰富的经验"
+        android:textSize="35px"
+        android:textColor="#A5A5A5"
+        />
+
+    <TextView
+        android:id="@+id/tv_fuwurenshu"
+        android:layout_below="@+id/tv_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55px"
+        android:layout_marginTop="87px"
+        android:textSize="72px"
+        android:textColor="#333333"
+        android:text="330"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="51px"
+        android:layout_marginTop="0px"
+        android:layout_below="@id/tv_fuwurenshu"
+        android:text="服务人数"
+        android:textSize="35px"
+        android:textColor="#A5A5A5"
+        />
+    <TextView
+        android:id="@+id/tv_chuangzaoshouyi"
+        android:layout_below="@+id/tv_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320px"
+        android:layout_marginTop="87px"
+        android:textSize="72px"
+        android:textColor="#333333"
+        android:text="258,899.39"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320px"
+        android:layout_marginTop="0px"
+        android:layout_below="@id/tv_fuwurenshu"
+        android:text="创造收益"
+        android:textSize="35px"
+        android:textColor="#A5A5A5"
+        />
+
+    <TextView
+        android:id="@+id/tv_zhidaojianshu"
+        android:layout_below="@id/tv_chuangzaoshouyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59px"
+        android:layout_marginTop="136px"
+        android:textSize="38px"
+        android:textColor="#333333"
+        android:drawableLeft="@drawable/xiangmujieshao"
+        android:text="指导简述"/>
+
+    <TextView
+        android:layout_below="@+id/tv_zhidaojianshu"
+        android:layout_width="859px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59px"
+        android:layout_marginTop="55px"
+        android:textSize="38px"
+        android:textColor="#AAAAAA"
+        android:lineSpacingExtra="10px"
+        android:text="@string/tv_program_introduction"/>
+
+
+
+
+
+
+</RelativeLayout>

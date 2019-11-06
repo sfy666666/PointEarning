@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghostWhile"
+    tools:context=".ui.main.ChatDetailActivity">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="150px"
+        android:scaleType="centerInside"
+        android:src="@drawable/fanhui"
+
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167px"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:textColor="#262626"
+        android:text="聊天详情"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="315px"
+        android:background="@color/white"
+        android:layout_marginTop="257px"
+        >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:src="@drawable/benben"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="42px"
+        android:layout_width="173px"
+        android:layout_height="173px"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_below="@id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="96px"
+            android:layout_marginTop="15px"
+            android:textSize="48px"
+            android:textColor="#B4B4B4"
+            android:text="本本"/>
+
+    <ImageView
+        android:src="@drawable/tianjiabig"
+        android:layout_marginLeft="251px"
+        android:layout_marginTop="42px"
+        android:layout_width="173px"
+        android:layout_height="173px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/white"
+        android:layout_marginTop="609px"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="52px"
+            android:textSize="40px"
+            android:textColor="#262626"
+            android:text="消息免打扰"/>
+        <CheckBox
+            android:id="@+id/checkbox_miandarao"
+            android:layout_width="155px"
+            android:layout_height="73px"
+            android:layout_marginTop="41px"
+            android:layout_marginLeft="880px"
+            android:checked="true"
+            android:background="@drawable/selector_checkbox_chat_detail"
+            android:button="@null"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/white"
+        android:layout_marginTop="787px"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="52px"
+            android:textSize="40px"
+            android:textColor="#262626"
+            android:text="清空聊天记录"/>
+        <CheckBox
+            android:id="@+id/checkbox_qingkongliaotianjilu"
+            android:layout_width="155px"
+            android:layout_height="73px"
+            android:layout_marginTop="41px"
+            android:layout_marginLeft="880px"
+            android:background="@drawable/selector_checkbox_chat_detail"
+            android:button="@null"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

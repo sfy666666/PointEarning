@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghostWhile"
+    tools:context=".ui.main.ShareIntoMomentsActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="140px"
+        android:scaleType="centerInside"
+        android:src="@drawable/fanhui"
+        />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="167px"
+        android:layout_height="77px"
+        android:text="发表"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:background="@drawable/lateral_gradient_shape"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="152px"
+        android:layout_marginLeft="876px"/>
+    <View
+        android:background="@color/colorWhite"
+        android:layout_marginTop="254px"
+        android:layout_width="match_parent"
+        android:layout_height="660px"/>
+
+    <EditText
+        android:layout_marginTop="297px"
+        android:layout_width="match_parent"
+        android:layout_height="660px"
+        android:textCursorDrawable="@drawable/color_cusor"
+        android:hint="写评论..."
+        android:gravity="top"
+        android:layout_marginLeft="51px"
+        android:background="@color/colorWhite"
+        android:textColorHint="#A6A6A6"/>
+    <ImageView
+        android:layout_width="211px"
+        android:layout_height="211px"
+        android:layout_marginLeft="82px"
+        android:layout_marginTop="558px"
+        android:src="@drawable/tupian"    />
+    <ImageView
+        android:layout_width="211px"
+        android:layout_height="211px"
+        android:layout_marginLeft="328px"
+        android:layout_marginTop="558px"
+        android:src="@drawable/tianjiabig"    />
+
+
+
+
+</RelativeLayout>

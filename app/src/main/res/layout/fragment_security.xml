@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.fragment.SecurityFragment">
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_header"
+        android:layout_marginTop="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/anquanbaozhang1"/>
+
+    <TextView
+        android:layout_below="@id/iv_header"
+        android:id="@+id/tv_anquanshuoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59px"
+        android:layout_marginTop="122px"
+        android:textSize="38px"
+        android:textColor="#333333"
+        android:drawableLeft="@drawable/xiangmujieshao"
+        android:text="安全说明"/>
+    <TextView
+        android:id="@+id/tv_program_introduction"
+        android:layout_below="@id/tv_anquanshuoming"
+        android:layout_width="859px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59px"
+        android:layout_marginTop="55px"
+        android:textSize="38px"
+        android:textColor="#AAAAAA"
+        android:lineSpacingExtra="10px"
+        android:text="@string/tv_program_introduction"/>
+
+</RelativeLayout>

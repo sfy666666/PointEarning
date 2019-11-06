@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.SearchActivity">
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:background="@drawable/white_search_shape"
+        android:queryBackground="@null"
+        android:searchIcon="@null"
+        android:queryHint="输入导师姓名"
+        android:iconifiedByDefault="false"
+        android:layout_marginLeft="58px"
+        android:layout_marginTop="143px"
+        android:layout_width="860px"
+        android:layout_height="94px"/>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:textStyle="bold"
+        android:textSize="38px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="960px"
+        android:layout_marginTop="172px"
+        android:text="取消"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索记录"
+        android:textSize="38px"
+        android:textStyle="bold"
+        android:layout_marginLeft="62px"
+        android:layout_marginTop="306px"/>
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:textSize="33px"
+        android:gravity="center"
+        android:drawableLeft="@drawable/delete"
+        android:textColor="#AAAAAA"
+        android:layout_marginLeft="915px"
+        android:layout_marginTop="310px"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="396px"
+        android:id="@+id/rlt"
+        android:layout_width="940px"
+        android:layout_marginLeft="67px"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_search_recoding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_hot_search"
+        android:layout_below="@id/rlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门搜索"
+        android:textSize="38px"
+        android:textStyle="bold"
+        android:layout_marginLeft="61px"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_hot_search"
+        android:layout_width="940px"
+        android:layout_marginLeft="67px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hot_search"
+        android:layout_marginTop="45px"/>
+
+
+
+
+</RelativeLayout>

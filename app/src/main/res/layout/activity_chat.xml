@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="50px"
+            android:scaleType="centerInside"
+            android:src="@drawable/fanhui"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67px"
+            android:textSize="48px"
+            android:textStyle="bold"
+            android:textColor="#262626"
+            android:text="王元"/>
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="964px"
+            android:layout_marginTop="50px"
+            android:scaleType="centerInside"
+            android:src="@drawable/more"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_below="@id/title"
+            android:layout_marginTop="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_view"
+        android:background="@color/ghostWhile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="100px"
+        >
+        <EditText
+            android:id="@+id/input"
+            android:layout_centerHorizontal="true"
+            android:hint="在这输入消息..."
+            android:paddingLeft="40px"
+            android:layout_width="1019px"
+            android:layout_height="110px"
+            android:background="@drawable/shape_of_edittext"/>
+        语音
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input"
+            android:layout_marginTop="64px"
+            android:layout_marginLeft="60px"
+            android:src="@drawable/yuyin"/>
+        表情
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input"
+            android:layout_marginTop="64px"
+            android:layout_marginLeft="277px"
+            android:src="@drawable/biaoqing"/>
+        照片
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input"
+            android:layout_marginTop="64px"
+            android:layout_marginLeft="503px"
+            android:src="@drawable/zhaopian"/>
+        拍照
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input"
+            android:layout_marginTop="64px"
+            android:layout_marginLeft="730px"
+            android:src="@drawable/takepicture"/>
+        更多
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input"
+            android:layout_marginTop="64px"
+            android:layout_marginLeft="959px"
+            android:src="@drawable/tianjia"/>
+    </RelativeLayout>
+
+</RelativeLayout>

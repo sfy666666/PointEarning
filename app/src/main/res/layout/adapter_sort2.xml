@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/item_letter_layout2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="212px"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/haoyou" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="38px"
+            android:layout_toRightOf="@id/img"
+            android:text="新的好友"
+            android:textColor="#333333"
+            android:textSize="40px" />
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="986px"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true"
+            android:background="#DADADA"
+            android:visibility="gone"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

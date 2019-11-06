@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PointsForGiftsActivity"
+    android:background="@drawable/dibeijing">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="130px"
+        android:scaleType="centerInside"
+        android:src="@drawable/fanhuiwhite"
+        />
+    <ImageView
+        android:layout_width="869px"
+        android:layout_height="806px"
+        android:layout_marginLeft="99px"
+        android:layout_marginTop="228px"
+        android:scaleType="centerInside"
+        android:src="@drawable/jifenhuanhaoli"
+        />
+    <ImageView
+        android:layout_width="869px"
+        android:layout_height="806px"
+        android:layout_marginLeft="99px"
+        android:layout_marginTop="228px"
+        android:scaleType="centerInside"
+        android:src="@drawable/jifenhuanhaoli"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="1088px"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/colorWhite"
+            android:layout_marginTop="18px"
+            android:layout_width="75px"
+            android:layout_height="3px"/>
+        <TextView
+            android:id="@+id/tv_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="10px"
+            android:textSize="36px"
+            android:textColor="@color/colorWhite"
+            android:text="积分明细"/>
+
+        <View
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="18px"
+            android:layout_width="75px"
+            android:layout_height="3px"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="1120px"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:adjustViewBounds="true"
+            android:background="@drawable/beijingzhuangshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:paddingLeft="120px"
+            android:paddingRight="120px"
+            android:paddingTop="140px"
+            android:paddingBottom="48px"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="20px"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_tutor_communication"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/daoshihoutong"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tutor_communication"
+                    android:layout_toRightOf="@id/iv_tutor_communication"
+                    android:layout_marginTop="15px"
+                    android:layout_marginLeft="49px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="38px"
+                    android:textStyle="bold"
+                    android:text="导师沟通+5积分"/>
+                <TextView
+                    android:id="@+id/tv_tutor_communication_time"
+                    android:layout_alignLeft="@id/tv_tutor_communication"
+                    android:layout_below="@id/tv_tutor_communication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:textColor="#999999"
+                    android:textSize="33px"
+                    android:text="2019-9-10 13:09:28"/>
+
+                <Button
+                    android:id="@+id/btn_send1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="192px"
+                    android:layout_height="93px"
+                    android:text="兑换"
+                    android:textSize="38px"
+                    android:textStyle="bold"
+                    android:background="@drawable/lateral_gradient_shape"
+                    android:textColor="@color/colorWhite"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:paddingBottom="20px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_quality_project"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/liulanxiangmu"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_quality_project"
+                    android:layout_toRightOf="@id/iv_quality_project"
+                    android:layout_marginTop="25px"
+                    android:layout_marginLeft="49px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="38px"
+                    android:textStyle="bold"
+                    android:text="浏览优质项目+10积分"/>
+                <TextView
+                    android:id="@+id/tv_quality_project_time"
+                    android:layout_alignLeft="@id/tv_quality_project"
+                    android:layout_below="@id/tv_quality_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:textColor="#999999"
+                    android:textSize="33px"
+                    android:text="2019-9-10 13:09:28"/>
+
+                <Button
+                    android:id="@+id/btn_send_two"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="192px"
+                    android:layout_height="93px"
+                    android:text="兑换"
+                    android:textSize="38px"
+                    android:textStyle="bold"
+                    android:background="@drawable/lateral_gradient_shape"
+                    android:textColor="@color/colorWhite"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:paddingBottom="20px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_tutor_communication_two"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/daoshihoutong"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tutor_communication_two"
+                    android:layout_toRightOf="@id/iv_tutor_communication_two"
+                    android:layout_marginTop="25px"
+                    android:layout_marginLeft="49px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="38px"
+                    android:textStyle="bold"
+                    android:text="导师沟通+5积分"/>
+                <TextView
+                    android:id="@+id/tv_tutor_communication_time_two"
+                    android:layout_alignLeft="@id/tv_tutor_communication_two"
+                    android:layout_below="@id/tv_tutor_communication_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:textColor="#999999"
+                    android:textSize="33px"
+                    android:text="2019-9-10 13:09:28"/>
+
+                <Button
+                    android:id="@+id/btn_send_three"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="192px"
+                    android:layout_height="93px"
+                    android:text="兑换"
+                    android:textSize="38px"
+                    android:textStyle="bold"
+                    android:background="@drawable/lateral_gradient_shape"
+                    android:textColor="@color/colorWhite"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:paddingBottom="20px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_quality_project_two"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/liulanxiangmu"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_quality_project_two"
+                    android:layout_toRightOf="@id/iv_quality_project_two"
+                    android:layout_marginTop="25px"
+                    android:layout_marginLeft="49px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="38px"
+                    android:textStyle="bold"
+                    android:text="浏览优质项目+10积分"/>
+                <TextView
+                    android:id="@+id/tv_quality_project_time_two"
+                    android:layout_alignLeft="@id/tv_quality_project_two"
+                    android:layout_below="@id/tv_quality_project_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:textColor="#999999"
+                    android:textSize="33px"
+                    android:text="2019-9-10 13:09:28"/>
+
+                <Button
+                    android:id="@+id/btn_send_four"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="192px"
+                    android:layout_height="93px"
+                    android:text="兑换"
+                    android:textSize="38px"
+                    android:textStyle="bold"
+                    android:background="@drawable/lateral_gradient_shape"
+                    android:textColor="@color/colorWhite"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+   <!-- <ImageView
+        android:scaleType="centerInside"
+        android:layout_width="1050px"
+        android:layout_height="1050px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1120px"
+        android:background="@drawable/beijingzhuangshi"
+        />
+
+    <Button
+        android:id="@+id/btn_send1"
+        android:layout_width="192px"
+        android:layout_height="93px"
+        android:text="兑换"
+        android:textSize="38px"
+        android:textStyle="bold"
+        android:background="@drawable/lateral_gradient_shape"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="1265px"
+        android:layout_marginLeft="767px"/>
+    <Button
+        android:id="@+id/btn_send2"
+        android:layout_width="192px"
+        android:layout_height="93px"
+        android:text="兑换"
+        android:textSize="38px"
+        android:textStyle="bold"
+        android:background="@drawable/lateral_gradient_shape"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="1479px"
+        android:layout_marginLeft="767px"/>
+    <Button
+        android:id="@+id/btn_send3"
+        android:layout_width="192px"
+        android:layout_height="93px"
+        android:text="兑换"
+        android:textSize="38px"
+        android:textStyle="bold"
+        android:background="@drawable/lateral_gradient_shape"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="1705px"
+        android:layout_marginLeft="767px"/>
+    <Button
+        android:id="@+id/btn_send4"
+        android:layout_width="192px"
+        android:layout_height="93px"
+        android:text="兑换"
+        android:textSize="38px"
+        android:textStyle="bold"
+        android:background="@drawable/lateral_gradient_shape"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="1929px"
+        android:layout_marginLeft="767px"/>
+
+
+    <ImageView
+        android:padding="10px"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="116px"
+        android:layout_marginTop="1257px"
+        android:background="@drawable/daoshihoutong"
+        />
+    <ImageView
+        android:padding="10px"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="116px"
+        android:layout_marginTop="1466px"
+        android:background="@drawable/liulanxiangmu"
+        />
+    <ImageView
+        android:padding="10px"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="116px"
+        android:layout_marginTop="1690px"
+        android:background="@drawable/daoshihoutong"
+        />
+    <ImageView
+        android:padding="10px"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="116px"
+        android:layout_marginTop="1912px"
+        android:background="@drawable/liulanxiangmu"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="291px"
+        android:layout_marginTop="1272px"
+        android:textSize="38px"
+        android:textStyle="bold"
+        android:text="导师沟通+5积分"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="291px"
+        android:layout_marginTop="1349px"
+        android:textColor="#999999"
+        android:textSize="33px"
+        android:text="2019-9-10 13:09:28"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="291px"
+        android:layout_marginTop="1481px"
+        android:textSize="38px"
+        android:textStyle="bold"
+        android:text="导师沟通+5积分"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="291px"
+        android:layout_marginTop="1558px"
+        android:textColor="#999999"
+        android:textSize="33px"
+        android:text="2019-9-10 13:09:28"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="291px"
+        android:layout_marginTop="1705px"
+        android:textSize="38px"
+        android:textStyle="bold"
+        android:text="导师沟通+5积分"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="291px"
+        android:layout_marginTop="1782px"
+        android:textColor="#999999"
+        android:textSize="33px"
+        android:text="2019-9-10 13:09:28"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="291px"
+        android:layout_marginTop="1928px"
+        android:textSize="38px"
+        android:textStyle="bold"
+        android:text="导师沟通+5积分"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="291px"
+        android:layout_marginTop="2004px"
+        android:textColor="#999999"
+        android:textSize="33px"
+        android:text="2019-9-10 13:09:28"/>-->
+
+
+
+
+
+</RelativeLayout>

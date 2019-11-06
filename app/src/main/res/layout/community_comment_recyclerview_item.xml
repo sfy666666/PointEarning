@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36px"
+        android:layout_marginTop="41px"
+        android:adjustViewBounds="true"
+        android:src="@drawable/tou" />
+
+    <TextView
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="41px"
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rose you"
+        android:textColor="#FF514B"
+        android:textSize="40px" />
+
+    <TextView
+        android:layout_alignLeft="@id/tv_user_name"
+        android:layout_marginTop="110px"
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="导师真才实学，感觉理财方面收益颇多"
+        android:textSize="43px"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_alignLeft="@id/tv_user_name"
+        android:layout_marginTop="196px"
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8-21 1:23"
+        android:textSize="30px" />
+
+
+    <ImageView
+        android:id="@+id/iv_forward"
+        android:layout_width="35px"
+        android:layout_height="35px"
+        android:layout_marginLeft="823px"
+        android:layout_marginTop="192px"
+        android:scaleType="fitXY"
+        android:src="@drawable/zhuanfa" />
+    <ImageView
+        android:id="@+id/iv_comment"
+        android:layout_width="35px"
+        android:layout_height="35px"
+        android:layout_marginLeft="910px"
+        android:layout_marginTop="192px"
+        android:scaleType="fitXY"
+        android:src="@drawable/pinglun" />
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="35px"
+        android:layout_height="35px"
+        android:layout_marginLeft="1002px"
+        android:layout_marginTop="192px"
+        android:scaleType="fitXY"
+        android:src="@drawable/zan" />
+
+    <View
+        android:layout_width="919px"
+        android:layout_height="1px"
+        android:layout_marginLeft="155px"
+        android:layout_marginTop="266px"
+        android:background="#DDDDDD"/>
+
+
+
+
+</RelativeLayout>

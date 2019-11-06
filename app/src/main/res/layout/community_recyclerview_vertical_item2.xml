@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/ghostWhile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlt_top"
+        android:layout_marginTop="50px"
+        android:background="@drawable/shape_of_attention_art"
+        android:layout_width="match_parent"
+        android:paddingBottom="124px"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="209px"
+            android:layout_height="77px"
+            android:layout_marginLeft="827px"
+            android:layout_marginTop="44px"
+            android:background="@drawable/button_send_shape"
+            android:gravity="center"
+            android:text="+关注"
+            android:textColor="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="36px"
+            android:adjustViewBounds="true"
+            android:src="@drawable/tf" />
+
+     <!--   1<ImageView
+        android:id="@+id/img_one"
+        android:layout_width="315px"
+        android:layout_height="315px"
+        android:layout_marginLeft="55px"
+        android:layout_marginTop="10px"
+        android:layout_below="@id/tv_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/one" />
+        2 <ImageView
+        android:layout_width="315px"
+        android:layout_height="315px"
+        android:layout_marginLeft="387px"
+        android:layout_marginTop="10px"
+        android:layout_below="@id/tv_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/two" />
+        3<ImageView
+        android:layout_width="315px"
+        android:layout_height="315px"
+        android:layout_marginLeft="719px"
+        android:layout_marginTop="10px"
+        android:layout_below="@id/tv_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/three" />
+        4 <ImageView
+        android:layout_width="315px"
+        android:layout_height="315px"
+        android:layout_marginLeft="55px"
+        android:layout_marginTop="10px"
+        android:layout_below="@id/img_one"
+        android:scaleType="fitXY"
+        android:src="@drawable/four" />
+        5 <ImageView
+        android:layout_width="315px"
+        android:layout_height="315px"
+        android:layout_marginLeft="387px"
+        android:layout_marginTop="10px"
+        android:layout_below="@id/img_one"
+        android:scaleType="fitXY"
+        android:src="@drawable/five" />
+        6 <ImageView
+        android:layout_width="315px"
+        android:layout_height="315px"
+        android:layout_marginLeft="719px"
+        android:layout_marginTop="10px"
+        android:layout_below="@id/img_one"
+        android:scaleType="fitXY"
+        android:src="@drawable/six" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingTop="59px"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_content"
+            android:id="@+id/rv_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="Rose"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:paddingLeft="55px"
+            android:paddingRight="55px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="199px"
+            android:maxLines="5"
+            android:text="@string/contene_two" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_icon"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:text="50分钟前" />
+
+
+    </RelativeLayout>
+
+
+
+    <com.example.pointearning.widget.AutoCardView
+        android:layout_below="@id/rlt_top"
+        android:layout_marginTop="-56px"
+        android:layout_centerHorizontal="true"
+        android:layout_width="968px"
+        android:layout_height="111px">
+
+        <ImageView
+
+            android:layout_width="36px"
+            android:layout_height="34px"
+            android:layout_marginLeft="71px"
+            android:layout_marginTop="37px"
+            android:scaleType="fitXY"
+            android:src="@drawable/zhuanfa" />
+        <TextView
+            android:text="转发"
+            android:textSize="33px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="119px"
+            android:layout_marginTop="34px"/>
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="36px"
+            android:layout_height="34px"
+            android:layout_marginLeft="405px"
+            android:layout_marginTop="38px"
+            android:scaleType="fitXY"
+            android:src="@drawable/pinglun" />
+        <TextView
+            android:id="@+id/tv_message"
+            android:text="2345"
+            android:textSize="33px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="463px"
+            android:layout_marginTop="34px"/>
+        <ImageView
+            android:layout_width="36px"
+            android:layout_height="34px"
+            android:layout_marginLeft="767px"
+            android:layout_marginTop="37px"
+            android:scaleType="fitXY"
+            android:src="@drawable/zan" />
+        <TextView
+            android:text="2345"
+            android:textSize="33px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="826px"
+            android:layout_marginTop="34px"/>
+
+    </com.example.pointearning.widget.AutoCardView>
+
+</RelativeLayout>

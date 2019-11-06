@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/colorWhite"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/item_tutor_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/ewnwu" />
+
+        <TextView
+            android:id="@+id/item_tutor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_tutor_pic"
+            android:lines="1"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            tools:text="白雅晴" />
+
+        <TextView
+            android:id="@+id/item_tutor_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_tutor_name"
+            android:layout_toEndOf="@id/item_tutor_pic"
+            android:background="@drawable/button_send_shape"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:text="一级导师"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_tutor_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_tutor_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/item_tutor_tag1"
+            android:background="@drawable/button_send_shape"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:text="风投分析"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_tutor_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_tutor_tag1"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/item_tutor_pic"
+            android:lines="2"
+            tools:text="简介：这是一位有着丰富经验的老司机，投资和理财是他的强项" />
+
+        <TextView
+            android:id="@+id/item_tutor_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_tutor_pic"
+            android:layout_toEndOf="@id/item_tutor_pic"
+            android:drawableStart="@drawable/redu"
+            android:drawablePadding="5dp"
+            android:lines="1"
+            tools:text="23456" />
+
+        <TextView
+            android:id="@+id/item_tutor_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_tutor_pic"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@id/item_tutor_hot"
+            android:drawableStart="@drawable/yonghu2"
+            android:drawablePadding="5dp"
+            android:lines="1"
+            tools:text="234" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

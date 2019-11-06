@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghostWhile"
+    tools:context=".ui.main.SettingsActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="253px"
+        android:background="@color/white"/>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="150px"
+        android:scaleType="centerInside"
+        android:src="@drawable/fanhui"
+
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167px"
+        android:textSize="48px"
+        android:textColor="#262626"
+        android:text="设置"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="162px"
+        android:gravity="center"
+        android:layout_marginTop="300px"
+        android:background="@drawable/shape_of_settings"
+        >
+        <TextView
+            android:id="@+id/gerenziliaoshezhi"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:drawablePadding="42px"
+            android:textColor="#323232"
+            android:text="个人资料设置"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/gengduo"
+          />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="482px"
+        android:layout_marginTop="510px"
+        android:background="@drawable/shape_of_settings"
+        >
+        <TextView
+            android:id="@+id/qingchuhuancun"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:drawablePadding="42px"
+            android:textColor="#323232"
+            android:text="清除缓存"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/gengduo"
+            android:layout_marginTop="65px"
+          />
+        <TextView
+            android:id="@+id/guanyuwomen"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:drawablePadding="42px"
+            android:textColor="#323232"
+            android:text="关于我们"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/gengduo"
+            android:layout_marginTop="226px"
+          />
+        <TextView
+            android:id="@+id/tebieganxie"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:drawablePadding="42px"
+            android:textColor="#323232"
+            android:text="特别感谢"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/gengduo"
+            android:layout_marginTop="386px"
+          />
+
+        <View
+            android:background="#F4F4F4"
+            android:layout_width="919px"
+            android:layout_height="1px"
+            android:layout_marginTop="161px"
+            android:layout_centerHorizontal="true"/>
+        <View
+            android:background="#F4F4F4"
+            android:layout_width="919px"
+            android:layout_height="1px"
+            android:layout_marginTop="324px"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

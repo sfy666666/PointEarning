@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.JoinActivity">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginTop="140px"
+        android:scaleType="centerInside"
+        android:src="@drawable/fanhui"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167px"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:text="加入点赚通"/>
+
+    <ScrollView
+        android:layout_marginTop="51px"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="3334px"
+        android:scrollbars="none"
+        >
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:background="@drawable/jiarudianzhuangtong"
+            android:layout_width="match_parent"
+            android:layout_height="3334px"
+            >
+
+            <!--<Button
+                android:layout_width="919px"
+                android:layout_height="142px"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="88px"
+                android:layout_marginTop="1854px"
+                android:background="@drawable/lateral_gradient_shape"
+                android:text="立即邀请>"
+                />-->
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </ScrollView>
+
+</com.zhy.autolayout.AutoRelativeLayout>

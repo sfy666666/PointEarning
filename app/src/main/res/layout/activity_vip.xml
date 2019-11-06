@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.VIPActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="655px"
+        android:background="@drawable/back"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginTop="145px"
+        android:scaleType="centerInside"
+        android:src="@drawable/fanhui1"
+
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170px"
+        android:text="会员"
+        android:textColor="@color/colorWhite"
+        android:textSize="48px"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_marginLeft="1px"
+        android:layout_marginTop="230px"
+        android:background="@drawable/ppp" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginLeft="98px"
+        android:layout_marginTop="325px"
+        android:scaleType="centerInside"
+        android:src="@drawable/touxiang" />
+
+    <TextView
+        android:id="@+id/tv_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="780px"
+        android:layout_marginTop="350px"
+        android:background="@drawable/huiyuan"
+        android:gravity="center_horizontal"
+        android:padding="5px"
+        android:text="续费会员"
+        android:textColor="@color/colorWhite"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="313px"
+        android:layout_marginTop="348px"
+        android:text="金融Rose"
+        android:textSize="43px"
+
+        />
+
+    <TextView
+        android:id="@+id/introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="315px"
+        android:layout_marginTop="411px"
+        android:text="简介：暂无介绍"
+        android:textSize="32px"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="327px"
+        android:layout_marginTop="594px"
+        android:text="成长值"
+        android:textColor="#8A8A8A"
+        android:textSize="35px" />
+    积分下
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="684px"
+        android:layout_marginTop="594px"
+        android:text="积分"
+        android:textColor="#8A8A8A"
+        android:textSize="35px"
+
+        />
+
+    <TextView
+        android:id="@+id/chengzhangzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="333px"
+        android:layout_marginTop="522px"
+        android:text="466"
+        android:textColor="#FF564B"
+        android:textSize="50px"
+
+        />
+    积分
+
+    <TextView
+        android:id="@+id/integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="706px"
+        android:layout_marginTop="523px"
+        android:text="0"
+        android:textColor="#FF564B"
+        android:textSize="50px"
+
+        />
+
+    <TextView
+        android:id="@+id/chengzhangzhiwenzi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card"
+        android:layout_marginLeft="44px"
+        android:layout_marginTop="0px"
+        android:text="成长值"
+        android:textColor="#FF706C"
+        android:textSize="35px" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_chengzhangzhi"
+        android:layout_width="996px"
+        android:layout_height="342px"
+        android:layout_below="@id/chengzhangzhiwenzi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26px"
+        android:background="@drawable/shape_of_settings">
+
+        <TextView
+            android:id="@+id/dangqianchengzhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="327px"
+            android:layout_marginTop="69px"
+            android:text="466/"
+            android:textColor="#FF706C"
+            android:textSize="35px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="69px"
+            android:layout_toRightOf="@id/dangqianchengzhang"
+            android:text="1000"
+            android:textColor="#DEDEDE"
+            android:textSize="35px" />
+
+        <ImageView
+            android:layout_width="901px"
+            android:layout_height="19px"
+            android:layout_marginLeft="48px"
+            android:layout_marginTop="123px"
+            android:scaleType="fitXY"
+            android:src="@drawable/jindt" />
+
+        <ImageView
+            android:layout_width="309px"
+            android:layout_height="19px"
+            android:layout_marginLeft="48px"
+            android:layout_marginTop="123px"
+            android:scaleType="fitXY"
+            android:src="@drawable/youd" />
+        0
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="158px"
+            android:scaleType="fitXY"
+            android:src="@drawable/v0" />
+        1
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="208px"
+            android:layout_marginTop="158px"
+            android:scaleType="fitXY"
+            android:src="@drawable/v1" />
+        2
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="389px"
+            android:layout_marginTop="158px"
+            android:scaleType="fitXY"
+            android:src="@drawable/v2" />
+        3
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="37px"
+            android:layout_marginLeft="568px"
+            android:layout_marginTop="162px"
+            android:scaleType="fitXY"
+            android:src="@drawable/v3moren" />
+        4
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="37px"
+            android:layout_marginLeft="749px"
+            android:layout_marginTop="162px"
+            android:scaleType="fitXY"
+            android:src="@drawable/v4moren" />
+        5
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="37px"
+            android:layout_marginLeft="929px"
+            android:layout_marginTop="162px"
+            android:scaleType="fitXY"
+            android:src="@drawable/v5moren" />
+
+        <TextView
+            android:id="@+id/julixiayidengji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:layout_marginTop="265px"
+            android:text="距离下一等级换需要"
+            android:textColor="#CDCDCD"
+            android:textSize="35px" />
+
+        <TextView
+            android:id="@+id/julixiayidengji1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/julixiayidengji"
+            android:layout_toRightOf="@id/julixiayidengji"
+            android:text="534"
+            android:textColor="#FF564B"
+            android:textSize="50px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/julixiayidengji1"
+            android:layout_toRightOf="@id/julixiayidengji1"
+            android:text="成长值"
+            android:textColor="#CDCDCD"
+            android:textSize="35px" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_wodetequan"
+        android:layout_width="996px"
+        android:layout_height="162px"
+        android:layout_below="@id/rlt_chengzhangzhi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46px"
+        android:background="@drawable/shape_of_settings">
+
+        <TextView
+            android:id="@+id/wodetequan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/gengduo"
+            android:drawablePadding="42px"
+            android:gravity="center_vertical"
+            android:paddingLeft="64px"
+            android:paddingRight="30px"
+            android:text="我的特权"
+            android:textColor="#323232"
+            android:textSize="37px" />
+
+        <TextView
+            android:id="@+id/nichengshezhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="794px"
+            android:text="查看全部"
+            android:textColor="#CDCDCD"
+            android:textSize="34px"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_chengzhangrenwu"
+        android:layout_width="996px"
+        android:layout_height="640px"
+        android:layout_below="@id/rlt_wodetequan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62px"
+        android:background="@drawable/shape_of_settings">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64px"
+            android:layout_marginTop="65px"
+            android:text="成长任务"
+            android:textColor="#323232"
+            android:textSize="37px"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64px"
+            android:layout_marginTop="204px"
+            android:text="初次绑定账号"
+            android:textColor="#323232"
+            android:textSize="37px"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64px"
+            android:layout_marginTop="364px"
+            android:text="上传头像"
+            android:textColor="#323232"
+            android:textSize="37px"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64px"
+            android:layout_marginTop="523px"
+            android:text="特别感谢"
+            android:textColor="#323232"
+            android:textSize="37px"
+
+            />
+
+
+        <View
+            android:layout_width="919px"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="161px"
+            android:background="#F4F4F4" />
+
+        <View
+            android:layout_width="919px"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="322px"
+            android:background="#F4F4F4" />
+
+        <View
+            android:layout_width="919px"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="481px"
+            android:background="#F4F4F4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="66px"
+            android:layout_marginTop="258px"
+            android:text="+15成长值"
+            android:textColor="#FD504B"
+            android:textSize="25px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="66px"
+            android:layout_marginTop="418px"
+            android:text="+10成长值"
+            android:textColor="#FD504B"
+            android:textSize="25px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="66px"
+            android:layout_marginTop="577px"
+            android:text="+10成长值"
+            android:textColor="#FD504B"
+            android:textSize="25px" />
+
+        <Button
+            android:layout_width="138px"
+            android:layout_height="60px"
+            android:layout_marginLeft="791px"
+            android:layout_marginTop="211px"
+            android:background="@drawable/button_gray"
+            android:text="已领取"
+            android:textColor="@color/white"
+            android:textSize="23px" />
+
+        <Button
+            android:layout_width="138px"
+            android:layout_height="60px"
+            android:layout_marginLeft="791px"
+            android:layout_marginTop="372px"
+            android:background="@drawable/button_gray"
+            android:text="已领取"
+            android:textColor="@color/white"
+            android:textSize="23px" />
+
+        <Button
+            android:layout_width="138px"
+            android:layout_height="60px"
+            android:layout_marginLeft="791px"
+            android:layout_marginTop="531px"
+            android:background="@drawable/button_gray"
+            android:text="已领取"
+            android:textColor="@color/white"
+            android:textSize="23px" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

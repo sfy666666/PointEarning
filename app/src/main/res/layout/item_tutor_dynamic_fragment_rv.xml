@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlt_top"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="124px"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53px"
+                android:layout_marginTop="36px"
+                android:src="@drawable/dongtaitouxiang" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200px"
+                android:layout_centerVertical="true"
+                android:text="白雅晴"
+                android:textStyle="bold"
+                android:textSize="50px" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="55px"
+                android:id="@+id/tv_time"
+                android:textColor="#CACACA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31分钟前" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="55px"
+            android:paddingRight="55px"
+            android:layout_marginTop="20px"
+            android:layout_below="@id/top"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:text="@string/contene_one" />
+
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="49px"
+            android:paddingLeft="55px"
+            android:paddingRight="55px"
+            android:layout_below="@id/tv_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/iii" />
+
+    </RelativeLayout>
+
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rlt_top"
+        android:layout_marginTop="-56px"
+        android:layout_width="968px"
+        android:layout_height="111px">
+
+        <ImageView
+            android:layout_width="36px"
+            android:layout_height="34px"
+            android:layout_marginLeft="71px"
+            android:layout_marginTop="37px"
+            android:scaleType="fitXY"
+            android:src="@drawable/zhuanfa" />
+        <TextView
+            android:text="转发"
+            android:textSize="33px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="119px"
+            android:layout_marginTop="34px"/>
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="36px"
+            android:layout_height="34px"
+            android:layout_marginLeft="405px"
+            android:layout_marginTop="38px"
+            android:scaleType="fitXY"
+            android:src="@drawable/pinglun" />
+        <TextView
+            android:id="@+id/tv_message"
+            android:text="2345"
+            android:textSize="33px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="463px"
+            android:layout_marginTop="34px"/>
+        <ImageView
+            android:layout_width="36px"
+            android:layout_height="34px"
+            android:layout_marginLeft="767px"
+            android:layout_marginTop="37px"
+            android:scaleType="fitXY"
+            android:src="@drawable/zan" />
+        <TextView
+            android:text="2345"
+            android:textSize="33px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="826px"
+            android:layout_marginTop="34px"/>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+
+</RelativeLayout>

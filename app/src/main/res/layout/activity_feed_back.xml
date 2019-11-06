@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.FeedBackActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="253px"
+        android:background="@color/white"/>
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:layout_marginLeft="51px"
+        android:layout_marginTop="168px"
+        android:scaleType="fitXY"
+        android:src="@drawable/bcback"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167px"
+        android:textSize="48px"
+        android:textStyle="bold"
+        android:text="意见反馈"/>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="594px"
+        android:layout_marginTop="321px"
+        android:background="@drawable/white_circle_shape">
+
+            <Button
+                android:id="@+id/zhanghaowenti"
+                android:background="@drawable/hong"
+                android:layout_width="177px"
+                android:layout_height="62px"
+                android:gravity="center"
+                android:textSize="29px"
+                android:layout_marginLeft="43px"
+                android:layout_marginTop="39px"
+                android:textColor="#FF564B"
+                android:text="账号问题"/>
+            <Button
+                android:id="@+id/zhifuwenti"
+                android:background="@drawable/hui"
+                android:layout_width="177px"
+                android:layout_height="62px"
+                android:gravity="center"
+                android:textSize="29px"
+                android:layout_marginLeft="237px"
+                android:layout_marginTop="39px"
+                android:textColor="#CDCDCD"
+                android:text="支付问题"/>
+            <Button
+                android:id="@+id/qitawenti"
+                android:background="@drawable/hui"
+                android:layout_width="177px"
+                android:layout_height="62px"
+                android:gravity="center"
+                android:textSize="29px"
+                android:layout_marginLeft="431px"
+                android:layout_marginTop="39px"
+                android:textColor="#CDCDCD"
+                android:text="其他问题"/>
+
+
+        <EditText
+            android:id="@+id/input"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="44px"
+            android:gravity="top"
+            android:layout_marginTop="130px"
+            android:textSize="29px"
+            android:textColorHint="#CDCDCD"
+            android:textCursorDrawable="@drawable/color_cusor"
+            android:hint="简要描述你要反馈的意见和建议"/>
+        <TextView
+        android:id="@+id/zishuxianzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="942px"
+        android:layout_marginTop="380px"
+        android:textSize="35px"
+        android:textColor="#FF564B"
+        android:text="0"/>
+        <TextView
+            android:layout_toRightOf="@id/zishuxianzhi"
+            android:layout_alignBaseline="@id/zishuxianzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35px"
+            android:textColor="#CDCDCD"
+            android:text="/200"/>
+        <ImageView
+            android:layout_width="157px"
+            android:layout_height="157px"
+            android:layout_marginLeft="43px"
+            android:layout_marginTop="399px"
+            android:src="@drawable/tianjiatupian"
+            android:scaleType="fitXY"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:background="@drawable/tijiaoyijian"
+        android:layout_width="717px"
+        android:layout_height="119px"
+        android:gravity="center"
+        android:textSize="40px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1040px"
+        android:textColor="#FFFFFF"
+        android:text="提交意见"/>
+
+</RelativeLayout>
